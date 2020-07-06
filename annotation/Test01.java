@@ -18,6 +18,7 @@ public class Test01 extends Object{
     public static void test(){
         System.out.println("Deprecated");
     }
+    @SuppressWarnings("all")
 
     public void test02(){}
     List list =new ArrayList();
