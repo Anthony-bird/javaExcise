@@ -27,6 +27,7 @@ class User{
 
     public User() {
     }
+
     public User(String name, int id, int age) {
         this.name = name;
         this.id = id;
