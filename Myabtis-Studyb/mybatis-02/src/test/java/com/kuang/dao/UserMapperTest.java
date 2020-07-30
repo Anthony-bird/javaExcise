@@ -12,7 +12,7 @@ public class UserMapperTest {
     public void test(){
         SqlSession sqlSession = MybatisUtils.getSqlSession();
 
-        UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+        com.kuang.dao.UserMapper userMapper = sqlSession.getMapper(com.kuang.dao.UserMapper.class);
         List<User> userList = userMapper.getUserList();
 
         for (User user : userList) {
