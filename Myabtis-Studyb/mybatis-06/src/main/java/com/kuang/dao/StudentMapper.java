@@ -8,4 +8,6 @@ public interface StudentMapper {
 
     //查询所有学会信息及老师的信息
     public List<Student> getStudent();
+
+    public List<Student> getStudent2();
 }
