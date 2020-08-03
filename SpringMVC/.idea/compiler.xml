@@ -6,6 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-03-annotation" />
+        <module name="springmvc-04-controller" />
         <module name="springmvc-01-serlvet" />
         <module name="springmvc-02-hellomvc" />
         <module name="springmvc-02-hellomvc1" />
@@ -19,6 +21,8 @@
       <module name="springmvc-01-serlvet" options="" />
       <module name="springmvc-02-hellomvc" options="" />
       <module name="springmvc-02-hellomvc1" options="" />
+      <module name="springmvc-03-annotation" options="" />
+      <module name="springmvc-04-controller" options="" />
     </option>
   </component>
 </project>

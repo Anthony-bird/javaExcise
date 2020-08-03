@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="springmvc-02-hellomvc1:war exploded" />
+      <artifact name="springmvc-04-controller:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
@@ -17,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Jsp File" />
         <option value="XML File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -26,8 +26,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -75,7 +75,7 @@
     <configuration name="tomcat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.13" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="springmvc-02-hellomvc1:war exploded">
+        <artifact name="springmvc-04-controller:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -140,7 +140,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="springmvc-02-hellomvc1:war exploded" />
+          <artifact name="springmvc-04-controller:war exploded" />
         </option>
       </method>
     </configuration>
@@ -156,7 +156,7 @@
       <option name="presentableId" value="Default" />
       <updated>1596297711396</updated>
       <workItem from="1596297721652" duration="2596000" />
-      <workItem from="1596349544019" duration="10361000" />
+      <workItem from="1596349544019" duration="28881000" />
     </task>
     <servers />
   </component>

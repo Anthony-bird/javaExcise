@@ -17,5 +17,5 @@
     </bean>
 
     <!--BeanNameUrlHandlerMapping:bean-->
-    <bean id="/hello" class="com.kuang.controller.HelloController"/>
+    <bean id="/test" class="com.kuang.controller.HelloController"/>
 </beans>
