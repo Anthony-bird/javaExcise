@@ -26,6 +26,7 @@ public class BookServiceImpl implements BookService {
     }
 
     public int updateBook(Books books) {
+        System.out.println("BookServiceImpl:updateBook=>" + books);
         return bookMapper.updateBook(books);
     }
 
@@ -35,5 +36,9 @@ public class BookServiceImpl implements BookService {
 
     public List<Books> queryAllBook() {
         return bookMapper.queryAllBook();
+    }
+
+    public Books queryBookByName(String bookName) {
+        return bookMapper.queryBookByName(bookName);
     }
 }
