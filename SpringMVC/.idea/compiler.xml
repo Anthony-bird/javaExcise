@@ -2,15 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-02-hellomvc1" />
+        <module name="springmvc-06-ajax" />
+        <module name="springmvc-01-serlvet" />
+        <module name="springmvc-05-json" />
+        <module name="springmvc-02-hellomvc" />
         <module name="springmvc-03-annotation" />
         <module name="springmvc-04-controller" />
-        <module name="springmvc-01-serlvet" />
-        <module name="springmvc-02-hellomvc" />
-        <module name="springmvc-02-hellomvc1" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,6 +26,8 @@
       <module name="springmvc-02-hellomvc1" options="" />
       <module name="springmvc-03-annotation" options="" />
       <module name="springmvc-04-controller" options="" />
+      <module name="springmvc-05-json" options="" />
+      <module name="springmvc-06-ajax" options="" />
     </option>
   </component>
 </project>
