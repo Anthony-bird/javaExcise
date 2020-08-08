@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 public class ControllerTest3 {
     @RequestMapping("/t1")
-    public String test1(Model model){
-        model.addAttribute("msg","ControllerTest3");
+    public String test1(Model model) {
+        model.addAttribute("msg", "ControllerTest3");
         return ("test");
     }
 }

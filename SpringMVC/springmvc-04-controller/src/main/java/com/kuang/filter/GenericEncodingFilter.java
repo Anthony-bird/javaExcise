@@ -13,14 +13,12 @@ import java.util.Map;
  */
 public class GenericEncodingFilter implements Filter {
 
-
     public void destroy() {
     }
 
-
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         //处理response的字符编码
-        HttpServletResponse myResponse=(HttpServletResponse) response;
+        HttpServletResponse myResponse = (HttpServletResponse) response;
         myResponse.setContentType("text/html;charset=UTF-8");
 
         // 转型为与协议相关对象
@@ -29,7 +27,6 @@ public class GenericEncodingFilter implements Filter {
         HttpServletRequest myrequest = new MyRequest(httpServletRequest);
         chain.doFilter(myrequest, response);
     }
-
 
     public void init(FilterConfig filterConfig) throws ServletException {
     }
@@ -42,6 +39,7 @@ class MyRequest extends HttpServletRequestWrapper {
     private HttpServletRequest request;
     //是否编码的标记
     private boolean hasEncode;
+
     //定义一个可以传入HttpServletRequest对象的构造函数，以便对其进行装饰
     public MyRequest(HttpServletRequest request) {
         super(request);// super必须写

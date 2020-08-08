@@ -12,10 +12,10 @@
 </head>
 <body>
 
-    <form action="/hello" method="post">
-        <input type="text" name="method">
-        <input type="submit">
+<form action="/hello" method="post">
+    <input type="text" name="method">
+    <input type="submit">
 
-    </form>
+</form>
 </body>
 </html>

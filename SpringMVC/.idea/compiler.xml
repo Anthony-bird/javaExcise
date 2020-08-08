@@ -7,9 +7,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springmvc-07-intercepter" />
         <module name="springmvc-02-hellomvc1" />
         <module name="springmvc-06-ajax" />
         <module name="springmvc-01-serlvet" />
+        <module name="springmvc-08-file" />
         <module name="springmvc-05-json" />
         <module name="springmvc-02-hellomvc" />
         <module name="springmvc-03-annotation" />
@@ -28,6 +30,8 @@
       <module name="springmvc-04-controller" options="" />
       <module name="springmvc-05-json" options="" />
       <module name="springmvc-06-ajax" options="" />
+      <module name="springmvc-07-intercepter" options="" />
+      <module name="springmvc-08-file" options="" />
     </option>
   </component>
 </project>

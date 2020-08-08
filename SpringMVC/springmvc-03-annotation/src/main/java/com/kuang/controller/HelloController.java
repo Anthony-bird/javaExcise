@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class HelloController {
 
     @RequestMapping("/h1")
-    public String hello(Model model){
+    public String hello(Model model) {
         //封装数据
-        model.addAttribute("msg","Hello,SpringMVCAnnotation!");
+        model.addAttribute("msg", "Hello,SpringMVCAnnotation!");
         return "hello"; //会被视图解析器处理
     }
 }

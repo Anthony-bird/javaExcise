@@ -12,7 +12,7 @@ public class HelloController implements Controller {
 
         //业务代码
         String result = "HelloSpringMVC";
-        mv.addObject("msg",result);
+        mv.addObject("msg", result);
 
         //视图跳转
         mv.setViewName("test");

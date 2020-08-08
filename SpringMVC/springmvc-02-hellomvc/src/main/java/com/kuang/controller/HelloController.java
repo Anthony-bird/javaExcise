@@ -12,7 +12,7 @@ public class HelloController implements Controller {
         ModelAndView mv = new ModelAndView();
 
         //封装对象，放在ModelAndView中。Model
-        mv.addObject("msg","HelloSpringMVC!");
+        mv.addObject("msg", "HelloSpringMVC!");
         //封装要跳转的视图，放在ModelAndView中
         mv.setViewName("hello"); //: /WEB-INF/jsp/hello.jsp
         return mv;

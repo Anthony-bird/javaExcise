@@ -8,10 +8,10 @@ import java.text.SimpleDateFormat;
 
 public class JsonUtils {
     public static String getJson(Object object) {
-        return getJson(object,"yyyy-MM-dd HH:mm:ss");
+        return getJson(object, "yyyy-MM-dd HH:mm:ss");
     }
 
-    public static String getJson(Object object,String dateFormat) {
+    public static String getJson(Object object, String dateFormat) {
         ObjectMapper mapper = new ObjectMapper();
         //不使用时间差的方式
         mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS, false);

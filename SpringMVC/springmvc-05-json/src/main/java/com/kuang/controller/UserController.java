@@ -20,8 +20,8 @@ import java.util.List;
 public class UserController {
 
     @RequestMapping("/j1")
-   // @ResponseBody
-    public String json1() throws  JsonProcessingException {
+    // @ResponseBody
+    public String json1() throws JsonProcessingException {
         //创建一个jackson的对象映射器，用来解析数据
         ObjectMapper mapper = new ObjectMapper();
 
@@ -44,7 +44,6 @@ public class UserController {
         list.add(user2);
         list.add(user3);
         list.add(user4);
-
 
         return JsonUtils.getJson(list);
     }

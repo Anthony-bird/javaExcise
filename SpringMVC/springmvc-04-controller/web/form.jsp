@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
- <form action="/e/t1" method="get">
-     <input type="text" name="name">
-     <input type="submit">
- </form>
+<form action="/e/t1" method="get">
+    <input type="text" name="name">
+    <input type="submit">
+</form>
 </body>
 </html>
