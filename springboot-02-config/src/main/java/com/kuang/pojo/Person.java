@@ -4,22 +4,26 @@ package com.kuang.pojo;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
+
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Email;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
 @Component
-//@ConfigurationProperties(prefix = "person")
+@ConfigurationProperties(prefix = "person")
+@Validated //数据效验
 
 //加载配置指定文件
-@PropertySource(value = "classpath:qinjiang.properties")
+//@PropertySource(value = "classpath:qinjiang.properties")
 public class Person {
+
     //SPEl表达式取出文件
-    @Value("${name}")
+    @Email(message = "邮箱格式错误")
     private String name;
     private Integer age;
     private Boolean happy;

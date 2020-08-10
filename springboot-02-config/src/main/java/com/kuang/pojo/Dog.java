@@ -1,30 +1,32 @@
 package com.kuang.pojo;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
+@ConfigurationProperties(prefix = "dog")
 public class Dog {
 
-    @Value("旺财")
-    private String name;
-    @Value("3")
+
+    private String firstName;
+
     private Integer age;
 
     public Dog() {
     }
 
     public Dog(String name, Integer age) {
-        this.name = name;
+        this.firstName = name;
         this.age = age;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     public Integer getAge() {
@@ -38,7 +40,7 @@ public class Dog {
     @Override
     public String toString() {
         return "Dog{" +
-                "name='" + name + '\'' +
+                "name='" + firstName + '\'' +
                 ", age=" + age +
                 '}';
     }
