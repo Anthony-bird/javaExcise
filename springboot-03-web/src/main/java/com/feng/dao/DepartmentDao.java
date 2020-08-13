@@ -23,10 +23,10 @@ public class DepartmentDao {
 
     }
 
-    public Collection<Department> getDepartment(){
+    public Collection<Department> getDepartments(){
         return departments.values();
     }
-    public Department getDepartmentId(Integer id){
+    public Department getDepartmentById(Integer id){
         return departments.get(id);
     }
 }

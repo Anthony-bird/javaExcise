@@ -18,11 +18,11 @@ public class EmployeeDao {
     static {
         employees = new HashMap<Integer, Employee>();
 
-        employees.put(101,new Employee(1001,"AA","A765632807@qq.com",0,new Department(101,"教学部")));
-        employees.put(102,new Employee(1002,"BB","B765632807@qq.com",1,new Department(102,"市场部")));
-        employees.put(103,new Employee(1003,"CC","C765632807@qq.com",0,new Department(103,"教研部")));
-        employees.put(104,new Employee(1004,"DD","D765632807@qq.com",1,new Department(104,"运营部")));
-        employees.put(105,new Employee(1005,"EE","E765632807@qq.com",0,new Department(105,"后勤部")));
+        employees.put(1001,new Employee(1001,"AA","A765632807@qq.com",0,new Department(101,"教学部")));
+        employees.put(1002,new Employee(1002,"BB","B765632807@qq.com",1,new Department(102,"市场部")));
+        employees.put(1003,new Employee(1003,"CC","C765632807@qq.com",0,new Department(103,"教研部")));
+        employees.put(1004,new Employee(1004,"DD","D765632807@qq.com",1,new Department(104,"运营部")));
+        employees.put(1005,new Employee(1005,"EE","E765632807@qq.com",0,new Department(105,"后勤部")));
 
     }
 
@@ -36,7 +36,7 @@ public class EmployeeDao {
             employee.setId(initId++);
         }
 
-        employee.setDepartment(departmentDao.getDepartmentId(employee.getDepartment().getId()));
+        employee.setDepartment(departmentDao.getDepartmentById(employee.getDepartment().getId()));
 
         employees.put(employee.getId(),employee);
     }
@@ -44,6 +44,10 @@ public class EmployeeDao {
     //通过id查询全部员工
     public Collection<Employee> getAll(){
         return employees.values();
+    }
+    //通过id查询员工
+    public Employee getEmployeeById(Integer id){
+        return employees.get(id);
     }
 
     //删除员工id
